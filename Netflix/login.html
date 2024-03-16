@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix</title>
+    <style>
+        * {
+            padding: 0px;
+            margin: 0px;
+            font-family: Arial;
+        }
+
+        .header {
+            background: linear-gradient(to top, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)), url("img/header.jpg");
+            height: 825px;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+
+
+
+        }
+
+        .navbar {
+            display: flex;
+            /* background-color: blueviolet; */
+            padding: 15px;
+        }
+
+
+        .logo {
+            padding: 5px;
+
+        }
+
+        .logo a {
+            text-decoration: none;
+            color: red;
+        }
+
+        .form-container {
+            background-color: rgba(0, 0, 0, 0.527);
+            width: 350px;
+            height: 530px;
+            margin: auto;
+
+        }
+
+        .content {
+            padding: 0px 20px;
+            margin: 0px 40px;
+        }
+
+        .content h1 {
+            color: white;
+            margin: 15px 10px;
+
+        }
+
+        input[type="email"],
+        input[type="password"] {
+            background-color: rgb(47, 46, 46);
+            padding: 8px;
+            width: 200px;
+            border: 0;
+            margin: 15px 10px;
+            color: white;
+          
+          
+
+        }
+        input::placeholder{
+            transition: all 0.3s ease;
+            position: absolute;
+        }
+        input:focus::placeholder{
+            font-size: 9px;
+            top: 0;
+        }
+
+
+
+        .btn {
+            background-color: rgb(254, 0, 0);
+            padding: 8px;
+            width: 215px;
+            border: 0;
+            margin: 15px 10px;
+        }
+
+        .btn a {
+            text-decoration: none;
+            color: white;
+        }
+
+        .btn:active {
+            opacity: 0.5;
+        }
+
+
+        .content2 {
+            padding: 0px 20px;
+            margin: 0px 50px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+
+
+        }
+
+        .content2 form {
+            display: flex;
+            align-items: center;
+        }
+
+        .content2 form label {
+            font-size: 10px;
+            color: rgb(127, 124, 124);
+        }
+
+        .content2 a {
+            text-decoration: none;
+            color: rgb(127, 124, 124);
+            font-size: 10px;
+
+        }
+
+        /* Content3 Start */
+        .content3 {
+            padding: 0px 20px;
+            margin: 50px;
+            ;
+            color: rgb(127, 124, 124);
+            font-size: 12px;
+        }
+
+        .content3 h3 {
+            font-size: 10px;
+            font-weight: 100;
+            margin: 10px 0px;
+        }
+
+        .content3 h3 a {
+            color: white;
+            font-size: 11px;
+            text-decoration: none;
+        }
+
+        .content3 p {
+            font-size: 9px;
+            font-weight: lighter;
+        }
+
+        .content3 p a {
+            color: blue;
+            text-decoration: none;
+            font-size: 10px;
+        }
+
+        /* Footer start */
+        footer {
+            background-color: rgba(0, 0, 0, 0.608);
+            height: fit-content;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            margin-top: 60px;
+        }
+
+        .footer-container {
+            display: grid;
+            grid-template-columns: repeat(4, 180px);
+            grid-template-rows: repeat(4, 35px);
+            grid-gap: 0px 10px;
+            padding: 2px;
+            align-items: center;
+           
+
+        }
+
+        .footer-item {
+            color: rgb(139, 136, 136);
+            font-size: 10px;
+            margin: 0;
+            padding: 0;
+            text-decoration: none;
+        }
+     
+
+        .item1 {
+            grid-column: 1 / 5;
+            font-size: 11px;
+            text-decoration: none;
+        }
+       
+
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <div class="navbar">
+            <div class="logo">
+                <h1><a href="index.html">Netflix</a></h1>
+            </div>
+        </div>
+
+        <div class="form-container">
+            <div class="content">
+                <h1>Sign In</h1>
+                <form action="">
+                    <input type="email" placeholder="Email or phone number">
+                    <input type="password" placeholder="Password">
+
+
+                </form>
+                <button class="btn" type="button"> <a href="login.html">Sign In</a></button>
+            </div>
+
+            <div class="content2">
+                <form action="">
+                    <input type="checkbox" id="remember">
+                    <label for="remember">Remember Me</label>
+                </form>
+
+                <a href="">Need Help?</a>
+
+
+
+            </div>
+
+            <div class="content3">
+                <h3>New To Netflix? <a href="">Sign Up Now</a></h3>
+                <p>This page is protected by Google reCAPTCHA to ensure you're not a bot <a href="">Learn more</a></p>
+
+            </div>
+        </div>
+        <footer>
+            <div class="footer-container">
+                <a href="" class="footer-item item1">Questions? Contact us</a>
+                <a href="" class="footer-item">FAQ.</a>
+                <a href="" class="footer-item">Help Center</a>
+                <a href="" class="footer-item">Terms of Use</a>
+                <a href="" class="footer-item">Privacy</a>
+                <a href="" class="footer-item">Cookie Preferences</a>
+                <a href="" class="footer-item">Corporate Information</a>
+            </div>
+        </footer>
+
+
+    </header>
+
+
+</body>
+
+</html>
