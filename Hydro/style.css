@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 *{
   padding: 0;
   margin: 0;
@@ -306,4 +307,314 @@ nav{
     border: none;
     color:grey;
     margin-top: 20px;
+=======
+*{
+  padding: 0;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    width: 100%;
+}
+header{
+    height: 970px;
+    background:linear-gradient(to right,#0576e686, #00f2619b), url("img/bg.jpg");
+    background-repeat: no-repeat;
+     background-size: cover;
+    background-position:center ;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+   
+   
+  
+    
+}
+
+nav{
+    padding: 35px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: baseline;
+  
+    
+}
+.logo a{ 
+    color: white;
+    text-decoration: none;
+    font-size: 35px;
+}
+.pages a{
+    padding: 15px;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+.pages a:hover{
+    color: #BA0101;
+}
+
+
+.social-icons{
+    display: flex;
+}
+
+
+.icon{
+    width: 12px;
+    height: 12px;
+    background-size: cover;
+    margin: 5px 15px ;
+}
+.facebook{
+    background-image: url("img/facebook.png");
+    transition: background-image 0.4s ease-in-out;
+}
+.facebook:hover{
+    background-image: url("img/facebook\ red.png");
+}
+.twitter{
+    background-image: url("img/twitter.png");
+    transition: background-image 0.4s ease-in-out;
+}
+.twitter:hover{
+    background-image: url("img/twitter\ red.png");
+}
+.insta{
+    background-image: url("img/instagram.png"); 
+    transition: background-image 0.4s ease-in-out;
+}
+.insta:hover{
+    background-image: url("img/instagram\ red.png");
+}
+.nav-button{
+    display: flex;
+   align-items: baseline;
+}
+.nav-button .btn{
+    background-color:#BA0101;
+    padding:  20px;
+    border:none;
+    border-radius: 30px;
+    width: 140px;
+    height: 55px;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+   
+}
+.nav-button .btn:hover{
+    background:linear-gradient(to left,black,rgb(103, 102, 102));
+}
+.head-content {
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         height: 100vh;
+        
+}
+.section1,.section2{
+    height: 50%;
+    width: 35%;
+}
+
+.section1 h1{
+    font-size: 55px;
+    color: white;
+    padding: 20px;
+}
+
+.btn{
+    background-color: transparent;
+    border: 2px solid rgb(255, 255, 255);
+    padding: 20px;
+    border-radius: 30px;
+    width: 140px;
+    height: 55px;
+    font-weight: bold;
+    color: white;
+    margin: 10px 15px;
+    transition: all;
+    transition: all 1s cubic-bezier(0.26, 0.42, 0.13, 1.13);
+}
+
+.btn:hover{
+    background-color:#BA0101;
+    color: white;
+    border: none;
+    box-shadow: 2px 2px 9px 0.3px rgba(0, 0, 0, 0.173),4px 4px 9px 0.3px rgba(0, 0, 0, 0.173) inset;
+}
+.section1 span{
+    display: inline-block;
+    vertical-align: middle;
+    color: #f9f9f9;
+    font-weight: 500;
+    margin-left: 20px;
+}
+.section1 small{
+ display: block;
+}
+.section2 iframe{
+    position:relative;
+    width: 80%;
+    height: 80%;
+    z-index: 75;
+    background: rgba(0, 0, 0, .8);
+
+}
+
+/* About Section */
+.about{
+    background-color: white;
+    height: 400px;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+}
+
+.about .intro{
+    width: 450px;
+    padding: 25px;
+}
+
+
+.intro h2{
+    padding: 10px;
+    color: grey;
+    
+}
+.intro p{
+    padding: 10px;
+    color: rgb(160, 154, 154);
+  
+}
+
+
+
+.Progress{
+    width: 300px;
+    padding:10px;
+    
+}
+.about-skill{
+ 
+  display: grid;
+  grid-template-columns:300px;
+  grid-template-rows: 50px 50px 50px 50px;
+    
+}
+
+.skill{
+    display: grid;
+    grid-template-columns: 150px 150px ;
+    grid-template-rows: 20px 20px;
+
+}
+
+.skill strong{
+    color:rgb(47, 47, 47);
+    font-weight: lighter;
+}
+
+.bar {
+    width: 70%;
+    height: 2px;
+    background-color: #f2f2f2;
+    grid-column-end: span 3;
+   
+
+  }
+  
+.bar-85 {
+    width: 85%;
+    height: 2px;
+    background-color: #1f1f1f;
+  }
+
+  .bar-90{
+  
+    width: 90%;
+    height: 2px;
+    background-color: #1f1f1f;
+  }
+  .bar-75 {
+    
+    width: 75%;
+    height: 2px;
+    background-color: #1f1f1f;
+  }
+  .bar-70 {
+   
+    width: 70%;
+    height: 2px;
+    background-color: #1f1f1f;
+  }
+
+.CEO{
+    width: 400px;
+    padding:10px;
+  
+}
+.CEO img{
+    max-width: 100%;
+  
+   
+
+}
+
+/* Blog Start */
+.blog{
+    height: 1100px;
+    background-color: #f0f0f0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.blog h2{
+    padding: 20px;
+    margin-top: 25px;
+    font-size: 35px;
+    color: grey;
+}
+.blog-items{
+    display: grid;
+    grid-template-columns: 550px 550px;
+    grid-template-rows: 300px 300px;
+    grid-gap: 50px;
+    margin-top: 50px;
+}
+.items{
+   display: flex;
+}
+.blog-content{
+    padding: 30px;
+    background-color: white;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+    align-items: flex-start;
+}
+.blog-content small{
+    color:#BA0101;
+    padding: 5px;
+}
+.blog-content h3{
+    font-size: 21px;
+    font-weight: lighter;
+    padding: 5px;
+    color:rgb(72, 69, 69);
+}
+.blog-content p{
+    padding: 5px;
+    color:grey;
+}
+.blog-content button{
+    padding: 15px;
+    border-radius: 20px;
+    width: 50%;
+    border: none;
+    color:grey;
+    margin-top: 20px;
+>>>>>>> 6a68243f813e9da25d861bab97e02044c25c6cb7
 }
