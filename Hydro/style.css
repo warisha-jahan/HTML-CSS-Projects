@@ -308,3 +308,72 @@ nav{
     color:grey;
     margin-top: 20px;
 }
+/* Our Work */
+
+.Our-work{
+    height: 400px;
+    background-color: white;
+}
+.Our-work h3{
+    font-size: 35px;
+    color: grey;
+    margin: 50px 20px;
+    width: 100%;
+    text-align: center;
+ }
+.all-work{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+}
+.work img{
+    width: 250px;
+    height: 250px;
+}
+.work{
+    
+    position: relative;
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    isolation: isolate;
+  
+   
+    
+}
+
+.work::before{
+    content: "";
+    background-color:transparent;
+    position: absolute;
+    transition: 0.8s all cubic-bezier(0.39, 0.575, 0.565, 1);
+ 
+
+}
+
+
+
+.work:hover::before{
+    background-color: red;
+    opacity: 0.6;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+}
+
+.work::after{
+    content: "Cleaner";
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    opacity: 0;
+    bottom: 30%;
+    transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
+}
+.work:hover::after{
+    bottom: 50%;
+    opacity: 1;
+}
