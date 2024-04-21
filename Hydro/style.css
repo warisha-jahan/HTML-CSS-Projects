@@ -364,16 +364,61 @@ nav{
     top: 0;
 }
 
-.work::after{
-    content: "Cleaner";
+.content1::after{
+    content: "Clean & Minimal";
     color: white;
-    font-size: 20px;
+    font-size: 25px;
+    font-weight: bold;
     position: absolute;
     opacity: 0;
     bottom: 30%;
     transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
 }
-.work:hover::after{
+.content1:hover::after{
+    bottom: 50%;
+    opacity: 1;
+}
+
+.content2::after{
+    content: "Studio Bag";
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+    position: absolute;
+    opacity: 0;
+    bottom: 30%;
+    transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
+}
+.content2:hover::after{
+    bottom: 50%;
+    opacity: 1;
+}
+
+.content3::after{
+    content: "Frame Design";
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+    position: absolute;
+    opacity: 0;
+    bottom: 30%;
+    transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
+}
+.content3:hover::after{
+    bottom: 50%;
+    opacity: 1;
+}
+.content4::after{
+    content: "Paint Work";
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+    position: absolute;
+    opacity: 0;
+    bottom: 30%;
+    transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
+}
+.content4:hover::after{
     bottom: 50%;
     opacity: 1;
 }
