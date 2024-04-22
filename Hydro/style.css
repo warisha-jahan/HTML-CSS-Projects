@@ -4,9 +4,7 @@
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
 }
-body{
-    width: 100%;
-}
+
 header{
     height: 970px;
     background:linear-gradient(to right,#0576e686, #00f2619b), url("img/bg.jpg");
@@ -16,7 +14,7 @@ header{
     background-attachment: fixed;
     display: flex;
     flex-direction: column;
-    width: 100%;
+    width: 100vw;
    
    
   
@@ -28,7 +26,6 @@ nav{
     display: flex;
     justify-content: space-evenly;
     align-items: baseline;
-  
     
 }
 .logo a{ 
@@ -318,7 +315,6 @@ nav{
     font-size: 35px;
     color: grey;
     margin: 50px 20px;
-    width: 100%;
     text-align: center;
  }
 .all-work{
@@ -421,4 +417,77 @@ nav{
 .content4:hover::after{
     bottom: 50%;
     opacity: 1;
+}
+
+/* Contect Section Start */
+.contact{
+    margin-top: 60px;
+    height: 600px;
+    background:linear-gradient(to right,#0576e6, #00f261);
+}
+.contact h3{
+    font-size: 35px;
+    color: rgb(255, 255, 255);
+    padding: 40px;
+    text-align: center;
+    font-weight: lighter;
+}
+.boxes{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+    padding: 40px;
+}
+
+.form{
+    padding: 30px;
+    margin: 0 30px;
+
+}
+.form-group input[type="text"],input[type="email"],input[type="number"]{
+    border: 0;
+    border-radius: 5px;
+    color: rgba(20, 20, 20, 0.5);
+    font-size: 14px;
+    font-weight: normal;
+    margin-bottom: 15px;
+    padding: 20px 50px;
+    width: 250px;
+}
+.form-group select{
+    border-radius: 5px;
+    color: rgba(20, 20, 20, 0.5);
+    font-size: 14px;
+    font-weight: normal;
+    margin-bottom: 15px;
+    padding: 20px 50px;
+    width: 350px;
+}
+.form-group textarea{
+ 
+    border-radius: 5px;
+    color: rgba(20, 20, 20, 0.5);
+    font-size: 14px;
+    font-weight: normal;
+    margin-bottom: 15px;
+    padding: 20px 50px;
+    width: 600px;
+   
+}
+.submit-btn{
+    background-color: #BA0101;
+    border: none;
+    padding: 18px 50px;
+    border-radius: 30px;
+    font-weight: bold;
+    color: white;
+    margin: 10px 15px;
+    font-size: 15px;
+    cursor: pointer;
+}
+.map iframe{
+    border-radius: 100%;
+    width: 300px;
+    height: 300px;
+   
 }
