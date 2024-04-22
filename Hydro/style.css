@@ -26,6 +26,7 @@ nav{
     display: flex;
     justify-content: space-evenly;
     align-items: baseline;
+ 
     
 }
 .logo a{ 
@@ -422,7 +423,7 @@ nav{
 /* Contect Section Start */
 .contact{
     margin-top: 60px;
-    height: 600px;
+    height: 650px;
     background:linear-gradient(to right,#0576e6, #00f261);
 }
 .contact h3{
@@ -490,4 +491,66 @@ nav{
     width: 300px;
     height: 300px;
    
+}
+
+/* footer start */
+
+footer{
+   
+    background-color: black;
+    color: rgba(255, 255, 255, 0.781);
+    height: 500px;
+    padding: 10px;
+
+}
+.footer-1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 80px;
+  
+}
+.sub-footer{
+    display: grid;
+    grid-template-columns:400px 200px 200px 300px;
+
+}
+.sections h2,h3{
+    padding: 15px 0px;
+}
+.sections a{
+    display: block;
+    color: rgba(255, 255, 255, 0.781);
+    text-decoration: none;
+    padding:5px 0px;
+}
+.sec-1{
+    margin-right: 45px;
+}
+
+
+.footer-2{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.footer2-contact{
+    display: flex;
+    align-items: baseline;
+}
+.footer2-contact span{
+    margin-right: 15px;
+}
+
+.footer2-contact .social-icons{
+    margin-left: 15px;
+}
+
+hr{
+    width: 60%;
+    margin: auto;
+    border:1px solid #ffffff23;
 }
