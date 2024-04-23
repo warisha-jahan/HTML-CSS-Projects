@@ -4,7 +4,10 @@
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
 }
-
+html{
+    scroll-behavior: smooth;
+    scroll-padding: 20rem;
+}
 header{
     height: 970px;
     background:linear-gradient(to right,#0576e686, #00f2619b), url("img/bg.jpg");
