@@ -1,0 +1,116 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: arial;
+}
+
+header{
+    height:900px;
+    width: 100vw;
+    background:linear-gradient(rgba(0, 0, 0, 0.567),rgba(0, 0, 0, 0.611)),url("images/header.jpg");
+    background-size: cover;
+    background-position: center;
+
+}
+/* Start Navigation Styling */
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 35px;
+    align-items: baseline;
+}
+
+.logo{
+    font-size: 40px;
+    color:#ff7b00;
+    
+}
+
+.pages{
+    padding: 0px 10px;
+}
+.pages a{
+    text-decoration: none;
+    color: white;
+    font-size: 22px;
+    padding: 0px 20px;
+}
+
+.logins {
+  display: flex;
+  padding: 0px 20px;
+  margin: 0px 15px;
+  align-items: center;
+}
+.icon{
+    padding: 0px 10px;
+}
+.login-button a{
+    color: white;
+    text-decoration: none;
+    padding: 20px;
+    font-size: 20px;
+}
+.reg-button a{
+    color: #ff7b00;
+    font-size: 20px;
+    text-decoration: none;
+    padding: 10px 25px;
+    background-color: white;
+    border-radius: 10px;
+   
+}
+
+/*End OF Navigation Styling*/
+
+
+/* Start Main Content Of Header  */
+
+.head-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+   margin-top: 7%;
+   padding: 20px;
+
+}
+.head-content h1{
+    color: white;
+    font-size: 70px;
+   text-align: center;
+   padding: 10px;
+}
+.head-content p{
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    padding: 10px;
+}
+
+.head-content a{
+    color: white;
+    background-color: #ff7b00;
+    border-radius: 10px;
+    padding: 15px 25px;
+    margin-top: 10px;
+    text-decoration: none;
+}
+
+.main-bar{
+    width: 50%;
+    height: 170px;
+    background-color: white;
+    border-radius: 10px;
+    margin: auto;
+    position: relative;
+    top: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-bar h3,img{
+    display: inline-block;
+    padding: 20px;
+}
