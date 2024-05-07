@@ -5,11 +5,10 @@
 }
 
 header {
-    height: 900px;
-    width: 100vw;
+
     background: linear-gradient(rgba(0, 0, 0, 0.567), rgba(0, 0, 0, 0.611)), url("images/header.jpg");
-    background-size: cover;
     background-position: center;
+    background-size: cover;
 
 }
 
@@ -24,11 +23,16 @@ nav {
 .logo {
     font-size: 40px;
     color: #ff7b00;
+    position: relative;
+    animation: LeftToRight 1s 1 ;
 
 }
 
+
 .pages {
     padding: 0px 10px;
+    animation: Fade 2s 1 ;
+    
 }
 
 .pages a {
@@ -43,6 +47,8 @@ nav {
     padding: 0px 20px;
     margin: 0px 15px;
     align-items: center;
+    position: relative;
+    animation:RightToLeft 1s 1 ;
 }
 
 .icon {
@@ -86,6 +92,8 @@ nav {
     font-size: 70px;
     text-align: center;
     padding: 10px;
+    position: relative;
+    animation: UpToDown 1s 1 ;
 }
 
 .head-content p {
@@ -93,6 +101,7 @@ nav {
     font-size: 20px;
     text-align: center;
     padding: 10px;
+    animation: Fade 1s 1 ;
 }
 
 .head-content a {
@@ -102,6 +111,8 @@ nav {
     padding: 15px 25px;
     margin-top: 10px;
     text-decoration: none;
+    position:relative;
+    animation: SkewTrans 0.5s 1 cubic-bezier(0.175, 0.885, 0.32, 1.275) ;
 }
 
 .main-bar {
@@ -111,7 +122,7 @@ nav {
     border-radius: 10px;
     margin: auto;
     position: relative;
-    top: 150px;
+    top: 120px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -126,32 +137,39 @@ img {
 
 /* Categories Section Start */
 
-.categories{
+.categories {
     height: 600px;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    margin-top: 5%;
+    margin: 200px 0px;
+
 }
-h2{
+
+h2 {
     font-size: 48px;
     padding: 50px;
+    
 }
-.cat-list{
+
+.cat-list {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.cats{
+.cats {
     display: flex;
     justify-content: center;
     position: relative;
-    
+
 }
 
-.cat1,.cat2,.cat3,.cat4{
+.cat1,
+.cat2,
+.cat3,
+.cat4 {
     background: linear-gradient(rgba(0, 0, 0, 0.567), rgba(0, 0, 0, 0.611)), url("images/marketing.jpg");
     background-position: center;
     background-size: cover;
@@ -159,19 +177,22 @@ h2{
     height: 500px;
     border-radius: 10px;
     margin: 5px;
-  
+
 }
-.cat2{
+
+.cat2 {
     background: linear-gradient(rgba(0, 0, 0, 0.567), rgba(0, 0, 0, 0.611)), url("images/programming.jpg");
     background-position: center;
     background-size: cover;
 }
-.cat3{
+
+.cat3 {
     background: linear-gradient(rgba(0, 0, 0, 0.567), rgba(0, 0, 0, 0.611)), url("images/tech.jpg");
     background-position: center;
     background-size: cover;
 }
-.cat4{
+
+.cat4 {
     background: linear-gradient(rgba(0, 0, 0, 0.567), rgba(0, 0, 0, 0.611)), url("images/design.jpg");
     background-position: center;
     background-size: cover;
@@ -179,29 +200,32 @@ h2{
 
 
 
-.text-overlay{
+.text-overlay {
     position: absolute;
-   bottom: 10%;
-   color: white;
-   font-size: 32px;
-   transition: all 1s cubic-bezier(0.165, 0.84, 0.44, 1);
-  
+    bottom: 10%;
+    color: white;
+    font-size: 32px;
+    transition: all 1s cubic-bezier(0.165, 0.84, 0.44, 1);
+    left: 10%;
+
 }
 
-.cats:hover .text-overlay{
-   opacity: 0;
-   bottom: 50%;
+.cats:hover .text-overlay {
+    opacity: 0;
+    bottom: 50%;
 }
 
 
 /* About section start */
 
-.about{
+.about {
     height: 700px;
-    margin-top: 5%;
     display: flex;
     justify-content: center;
- 
+    padding: 40px;
+    margin: 120px 0px;
+
+
 
 }
 
@@ -216,80 +240,334 @@ h2{
     justify-content: center;
 }
 
-.about-content h2{
+.about-content h2 {
     padding: 15px;
     font-size: 42px;
+    
 }
-.about-content span{
-    color:  #ff7b00;
+
+.about-content span {
+    color: #ff7b00;
 }
-.about-content p{
-   padding: 15px;
-   font-size: 25px;
+
+.about-content p {
+    padding: 15px;
+    font-size: 28px;
 }
-.enr-button{
+
+.enr-button {
     padding: 15px;
 }
+
 .enr-button a {
-    color:white;
+    color: white;
     font-size: 20px;
     text-decoration: none;
     padding: 10px 25px;
-    background-color:  #ff7b00;
+    background-color: #ff7b00;
     border-radius: 10px;
 
 }
 
 /* Courses SEction Start */
 
-.courses{
+.courses {
     height: 700px;
-    margin-top: 5%;
+    padding: 60px 10px;
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
+
 }
-.courses h2{
+
+.courses h2 {
     text-align: center;
     padding: 15px;
     font-size: 42px;
-    margin-top: 20%  ;
+    padding: 30px 10px;
+
 }
-.crs-list{
+
+.crs-list {
     display: flex;
     justify-content: center;
-    margin-top: 5%;
+
 }
 
-.title{
+.title {
     display: flex;
     justify-content: space-evenly;
-    align-items:baseline;
+    align-items: baseline;
 
 }
 
-.title h3{
+.title h3 {
     font-size: 25px;
 }
-.stars img{
+
+.stars img {
     padding: 0;
     width: 20%;
 }
 
 
 
-.detail{
+.detail {
     display: flex;
     justify-content: space-evenly;
-    align-items:center;
-    margin-top:7%;
+    align-items: center;
+
 }
-.detail h3{
+
+.detail h3 {
     font-size: 35px;
     color: #ff7b00;
 }
-.detail img{
-   padding: 0 6px;
+
+.detail img {
+    padding: 0 6px;
     width: 10%;
+}
+
+
+/*  Test Registratin Section */
+
+#test {
+    flex-direction: row-reverse;
+}
+
+/* Examination Section */
+
+#exam {
+    height: 350px;
+}
+
+
+.exam1,
+.exam2,
+.exam3,
+.exam4 {
+    background: linear-gradient(rgba(0, 0, 0, 0.567), rgba(0, 0, 0, 0.611)), url("images/exam\ 1.jpg");
+    background-position: center;
+    background-size: cover;
+    width: 350px;
+    height: 500px;
+    border-radius: 10px;
+    margin: 5px;
+
+}
+
+.exam2 {
+    background: linear-gradient(rgba(0, 0, 0, 0.567), rgba(0, 0, 0, 0.611)), url("images/exam2.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+.exam3 {
+    background: linear-gradient(rgba(0, 0, 0, 0.567), rgba(0, 0, 0, 0.611)), url("images/exam3.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+.exam4 {
+    background: linear-gradient(rgba(0, 0, 0, 0.567), rgba(0, 0, 0, 0.611)), url("images/exam4.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+
+/* Registration Section */
+.Registration {
+    margin: 120px 0px;
+}
+
+.Registration h2 {
+    text-align: center;
+    width: 100%;
+}
+
+#reg form {
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    background-color: #ff7b0009;
+    box-shadow: 4px 3px 7px 2px grey;
+    justify-content: center;
+    margin: 0px 25px;
+}
+
+#reg span {
+    padding: 30px 10px;
+}
+
+.inputs {
+    padding: 20px 10px;
+    margin: 10px 0px;
+    font-size: 16px;
+}
+
+#reg form a {
+    padding: 15px 25px;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    background-color: #ff7b00;
+    width: fit-content;
+    border-radius: 10px;
+}
+
+
+/* Reviews Section */
+
+.Reviews h3 {
+    text-align: center;
+    width: 100%;
+    font-size: 30px;
+}
+
+#rev {
+    flex-direction: row-reverse;
+    margin: 0;
+    align-items: baseline;
+}
+
+.students-rev {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+
+
+
+}
+
+.students-details {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+
+
+}
+
+.stu-name small {
+    color: #ff7b00;
+
+}
+
+.students-pera {
+    padding: 7px;
+}
+
+
+/* footer Start */
+footer{
+    background-color: black;
+    color: white;
+    height: 400px;
+}
+.footer{
+    display: flex;
+}
+.web-details{
+    width: 80%;
+    padding: 50px;
+}
+
+.address{
+    width: 10%;
+    padding: 50px;
+}
+
+.web-pages{
+    width: 10%;
+    padding: 50px;
+    font-size: 14px;
+}
+table{
+    border: none;
+  
+}
+
+table td{
+    padding: 8px 0px;
+}
+
+/* Subscribe Button */
+
+footer h3{
+    width: 100%;
+    text-align: center;
+}
+
+.subscribe{
+   display: flex;
+   justify-content: center;
+   margin: 15px 0px;
+}
+
+.subscribe input[type="email"]{
+    padding: 10px 40px;
+}
+
+.subscribe a{
+    background-color: #ff7b00;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: white;
+   
+}
+
+
+
+
+/* Animations */
+
+
+@keyframes LeftToRight {
+    0% {
+        transform: translateX(-100px);
+    }
+    100% {
+        transform: translateX(0px);
+    }
+}
+
+@keyframes UpToDown {
+    0% {
+        transform: translateY(-100px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+
+@keyframes RightToLeft {
+    0% {
+        transform: translateX(100px);
+    }
+    100% {
+        transform: translateX(0px);
+    }
+}
+
+@keyframes Fade {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+@keyframes SkewTrans {
+    0% {
+        transform: translateX(100px) ;
+    }
+    50%{
+        transform: skewX(-35deg);
+    }
+    100% {
+        transform: translateX(0px);
+    }
 }
