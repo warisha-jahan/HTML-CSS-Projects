@@ -88,7 +88,7 @@ nav {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 550px;
+    height: 700px;
     background-color:#F0F0F0  ;
 }
 .content-side{
@@ -107,36 +107,136 @@ nav {
     padding: 15px 0px;
 }
 
-.order{
+.button{
     display: inline-block;
     padding:10px 20px;
-    font-weight: bold;
-    background-color: #FF0B06;
+    font-weight: bold; 
     color: white;
     text-decoration: none;
     margin: 25px 12px;
     border-radius: 20px;
     font-size: 22px;
+    transition: all 0.5s ease-in;
   
 }
-.order:hover{
+.button:hover{
     background-color: #3E8E41 ;
     transform: scale(1.2);
 }
-.booking{
-    border: 1px solid #3E8E41;
+
+.button-primary{
+    background-color: #FF0B06;
+}
+
+.button-secondary{
+    border: 1px solid #FF0B06;
     background-color: transparent;
     color: black;
-   
 }
-.booking:hover{
+.button-secondary:hover{
     background-color: transparent;
+    border: 1px solid #3E8E41;
 }
+
 .image-side{
     padding: 10px 20px;
     margin: 10px 25px;
     
 }
+
+
+
+
+/* Counter */
+
+.counter{
+    height: 150px;
+    background-color: #FF0B06;
+    border-radius: 15px;
+    width: 40%;
+    margin: auto;  
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: 2px;
+    
+}
+
+.counter-item{
+    
+   font-size: 28px;
+   margin: 25px;
+   color: white;
+   font-weight: bold;
+  
+    
+}
+
+.counter-label
+{
+    margin: 10px 0px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* animations */
 
