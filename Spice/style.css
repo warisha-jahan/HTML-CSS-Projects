@@ -90,6 +90,7 @@ nav {
     align-items: center;
     height: 700px;
     background-color:#F0F0F0  ;
+    position: relative;
 }
 .content-side{
     padding: 10px 20px;
@@ -116,6 +117,7 @@ nav {
     margin: 25px 12px;
     border-radius: 20px;
     font-size: 22px;
+    animation: ZoomIn 1s 1 ease-in-out;
     transition: all 0.5s ease-in;
   
 }
@@ -160,19 +162,21 @@ nav {
     align-items: center;
     justify-content: center;
     position: absolute;
-    bottom: 2px;
+    bottom: -10%;
+    animation: LeftToRight 1s 1;
     
 }
 
 .counter-item{
     
-   font-size: 28px;
+   font-size: 24px;
    margin: 25px;
    color: white;
    font-weight: bold;
+
+  }
   
     
-}
 
 .counter-label
 {
@@ -181,36 +185,62 @@ nav {
 
 
 
+/* Why Choose Us - Section Start */
+
+
+section,.why-choose-us{
+    height: 500px;
+
+    padding: 15px 20px;
+    margin-top: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.why-choose-us h2{
+    font-size: 50px;
+    padding: 15px ;
+}
+.why-choose-us p{
+    font-size: 20px;
+    padding: 10px ;
+    text-align: center;
+}
 
 
 
+.specialties-container{
+    display: grid;
+  grid-template-columns: repeat(4, 350px); 
+  grid-template-rows: repeat(1, 250px); 
+;
+  grid-gap: 20px; 
+  margin-top: 5%;
+  
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.specialities{
+    margin: 10px 20px;
+    grid-column-gap: 50px;
+    background-color: #F7DC6F ;
+    text-align: center;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 2px 4px 7px 2px gray;
+    transition: all 0.6s ease;
+    border-top:5px solid black ;
+    
+ 
+  
+}
+.specialities:hover{
+    /* transform: skew(-10deg); */
+    transform: scale(1.1);
+    background-color: #ffcc00 ;
+}
+.specialities h3{
+    font-size: 25px;
+}
 
 
 
@@ -298,3 +328,5 @@ nav {
         transform: translateX(0px);
     }
 }
+
+
