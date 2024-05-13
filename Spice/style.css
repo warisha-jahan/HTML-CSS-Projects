@@ -335,8 +335,119 @@ section p {
 
 }
 
+/*Reviews*/
+.reviews{
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.review-card {
+    background-color: #F7DC6F;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 1px grey;
+    width: 500px;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 5px 10px;
+    transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+    
 
-/* Best Dishes */
+}
+
+.review-card:hover{
+    transform: scale(1.2);
+    z-index: 1;
+}
+
+.review-card img {
+    max-width: 20%;
+    ;
+
+}
+
+.review-card p{
+    font-size: 20px;
+}
+
+.customer {
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+}
+
+.customer img {
+    border-radius: 100%;
+    width: 100px;
+    height: 30px;
+    margin: 3px;
+
+}
+
+.customer h3 {
+    margin: 3px;
+}
+
+/*Reviews*/
+
+.reviews{
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.review-card {
+    background-color: #F7DC6F;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 1px grey;
+    width: 500px;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 5px 10px;
+    transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+    
+
+}
+
+.review-card:hover{
+    transform: scale(1.2);
+    z-index: 1;
+}
+
+.review-card img {
+    max-width: 20%;
+    ;
+
+}
+
+.review-card p{
+    font-size: 20px;
+}
+
+.customer {
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+}
+
+.customer img {
+    border-radius: 100%;
+    width: 100px;
+    height: 30px;
+    margin: 3px;
+
+}
+
+.customer h3 {
+    margin: 3px;
+}
+
 
 
 
