@@ -433,6 +433,12 @@ form textarea:focus {
 
 }
 
+form textarea{
+    font-family: arial;
+    font-size: 15px;
+
+}
+
 form button {
     padding: 10px 20px;
     background-color: #FF0B06;
@@ -507,6 +513,11 @@ th {
 .section3 input {
     padding: 15px;
     width: 50%;
+    transition: all 0.7s cubic-bezier(0.39, 0.575, 0.565, 1);
+}
+
+.section3 input:focus{
+    transform: scale(1.1);
 }
 
 
